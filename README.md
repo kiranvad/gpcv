@@ -38,3 +38,13 @@ Compute the BMS score presented in the paper using:
 ```matlab
 [bms_label, bms_score]= obj.BayesianModelSelection();
 ```
+
+## Dependencies
+This reporsitory depends on the following pacakges all of which have been included with their respectice licenses attached in the `ext` folder.
+
+1. [GPML](http://www.gaussianprocess.org/gpml/code/matlab/doc/)
+2. [GPML Extensions](https://github.com/rmgarnett/gpml_extensions)
+3. [Active Learning Toolbox](https://github.com/rmgarnett/active_learning)
+4. [Active Area Search](https://github.com/yifeim/active-area-search)
+5. [Active search](https://github.com/rmgarnett/active_search)
+6. [Efficient Non-myopic Search](https://github.com/shalijiang/efficient_nonmyopic_active_search)
