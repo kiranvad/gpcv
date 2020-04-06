@@ -1,5 +1,5 @@
 # Gaussian Processes for Cyclic Voltammetry
-This repositiroy contains the reproducible code for the paper "Active Knwoledged Extraction from Cyclic Voltammetry".
+This repositiroy contains the reproducible code for the paper "Active Knwoledge Extraction from Cyclic Voltammetry" Kiran Vaddi and Olga Wodo, Universty at Buffalo, NY.
 The repositiroy is arranged as follows:
 ```
 gpcv : contains the functions required to perform various computations on the CV curves
@@ -14,8 +14,12 @@ This data is accesible in `gpcv/data` as .mat files.
 There are two demos detailing the experiments results in the paper:
 ```
 demos/demo_active_learning_cvcomb
+```
+Reproduces the active search framework to actively find S-shaped CV responses in a search space.
+```
 demos/demo_cvaas
 ```
+Reproduces the active area search framework to actively generating a kinetic fingerprint of a EC mechanism.
 
 Along with our BMS oracle, we implemented other comparitive oracles in `gpcv/CatalyticLabelOracle`.
 Here's a sample usage of the same for different methods:
@@ -42,9 +46,12 @@ Compute the BMS score presented in the paper using:
 ## Dependencies
 This reporsitory depends on the following pacakges all of which have been included with their respectice licenses attached in the `ext` folder.
 
-1. [GPML](http://www.gaussianprocess.org/gpml/code/matlab/doc/)
-2. [GPML Extensions](https://github.com/rmgarnett/gpml_extensions)
-3. [Active Learning Toolbox](https://github.com/rmgarnett/active_learning)
-4. [Active Area Search](https://github.com/yifeim/active-area-search)
-5. [Active search](https://github.com/rmgarnett/active_search)
-6. [Efficient Non-myopic Search](https://github.com/shalijiang/efficient_nonmyopic_active_search)
+* [GPML](http://www.gaussianprocess.org/gpml/code/matlab/doc/)
+* [GPML Extensions](https://github.com/rmgarnett/gpml_extensions)
+
+Experiments used in our paper depend on the following packages:
+
+* [Active Learning Toolbox](https://github.com/rmgarnett/active_learning)
+* [Active Area Search](https://github.com/yifeim/active-area-search)
+* [Active search](https://github.com/rmgarnett/active_search)
+* [Efficient Non-myopic Search](https://github.com/shalijiang/efficient_nonmyopic_active_search)
