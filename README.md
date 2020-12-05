@@ -1,4 +1,4 @@
-all# Gaussian Processes for Cyclic Voltammetry
+# Gaussian Processes for Cyclic Voltammetry
 This repositiroy contains the reproducible code for the paper "Active Knwoledge Extraction from Cyclic Voltammetry" Kiran Vaddi and Olga Wodo, Universty at Buffalo, NY.
 The repositiroy is arranged as follows:
 ```
