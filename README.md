@@ -1,4 +1,4 @@
-# Gaussian Processes for Cyclic Voltammetry
+all# Gaussian Processes for Cyclic Voltammetry
 This repositiroy contains the reproducible code for the paper "Active Knwoledge Extraction from Cyclic Voltammetry" Kiran Vaddi and Olga Wodo, Universty at Buffalo, NY.
 The repositiroy is arranged as follows:
 ```
@@ -24,8 +24,8 @@ Reproduces the active area search framework to actively generating a kinetic fin
 Along with our BMS oracle, we implemented other comparitive oracles in `gpcv/CatalyticLabelOracle`.
 Here's a sample usage of the same for different methods:
 ```matlab
-load([pwd '\CatalyticGP\cvdata\gridkzd.mat'])
-load([pwd '\CatalyticGP\cvdata\traindata_kzd.mat'])
+load([pwd '\gpcv\data\gridkzd.mat'])
+load([pwd '\gpcv\data\traindata_kzd.mat'])
 ref_sshape = input_x(:,121);
 i = 20
 obj = CatalyticLabelOracle(input_x(:,i),xtr_kzd(:,2),xtr_kzd(:,1),ref_sshape);
